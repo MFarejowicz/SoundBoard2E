@@ -9,7 +9,7 @@ export default class App extends Component {
     this.state = {
       dimensions: Dimensions.get("window")
     };
-    Dimensions.addEventListener("change", this.updateDimensions.bind(this));
+    Dimensions.addEventListener("change", this.updateDimensions.bind(this))
   }
 
   updateDimensions() {
@@ -19,38 +19,48 @@ export default class App extends Component {
   }
 
   render() {
-    let midFlex, horzPad, vertPad = 0
+    let titleSize, soundFlex, horzPad, vertPad
     if (this.state.dimensions.width > this.state.dimensions.height) {
-      midFlex = 18
+      titleSize = 60
+      soundFlex = 3
       horzPad = 135
+      vertPad = 0
     } else {
-      midFlex = 10
+      titleSize = 80
+      soundFlex = 2
       horzPad = 40
-      vertPad = 10
+      vertPad = 40
     }
 
     return (
       <View style={styles.container}>
-        <View style={styles.status} />
         <View style={styles.title}>
-          <Text style={{color: "#eceee0", textShadowColor: "#69d2e7", textShadowOffset: {width: 1.5, height: 1.5}, fontSize: 40, fontWeight: "bold"}}>2SoundE</Text>
+          <Text style={[styles.titleText, {fontSize: titleSize}]}>
+              2SoundE
+          </Text>
+          <Text style={styles.titleSubtext}>
+            Press to play!
+          </Text>
         </View>
-        <View style={{
-            flex: midFlex,
-            paddingLeft: horzPad,
-            paddingRight: horzPad,
-            paddingTop: vertPad,
-            paddingBottom: vertPad,
-            // borderWidth: 1,
-            backgroundColor: "#fa7819",
-            justifyContent: "space-around"
-          }}>
-          <SoundButtonRow names={["2 East strikes again","2 East before blood","Nani?!"]} dimensions={this.state.dimensions}/>
-          <SoundButtonRow names={["____ me, Max","Yeahhhh","Boiiii"]} dimensions={this.state.dimensions}/>
-          <SoundButtonRow names={["Yikes","Yike","Yeek"]} dimensions={this.state.dimensions}/>
-          <SoundButtonRow names={["It's fiiiine","West side ...","... Po-Po"]} dimensions={this.state.dimensions}/>
+        <View style={[styles.sounds,
+          {flex: soundFlex, paddingHorizontal: horzPad, paddingBottom: vertPad}]}>
+          <SoundButtonRow
+            names={["2 East strikes again!","2 East before blood!","Nani?!"]}
+            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            dimensions={this.state.dimensions}/>
+          <SoundButtonRow
+            names={["____ me, Max","Yeahhhh","Boiiii"]}
+            soundNames={["a.mp3", "Yeah.m4a", "Boi.m4a"]}
+            dimensions={this.state.dimensions}/>
+          <SoundButtonRow
+            names={["Yikes","Yike","Yeek"]}
+            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            dimensions={this.state.dimensions}/>
+          <SoundButtonRow
+            names={["It's fiiiine","West side\n...","...\nPo-Po"]}
+            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            dimensions={this.state.dimensions}/>
         </View>
-        <View style={styles.bottom} />
       </View>
     );
   }
@@ -59,19 +69,21 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  status: {
-    height: 20,
     backgroundColor: "#fa7819"
   },
   title: {
-    flex: 5,
-    backgroundColor: "#fa7819",
+    flex: 1,
     justifyContent: "center",
     alignItems: "center"
   },
-  bottom: {
-    height: 40,
-    backgroundColor: "#fa7819"
+  titleText: {
+    fontFamily: "ComicNeueAngular-BoldOblique",
+  },
+  titleSubtext: {
+    fontFamily: "ComicNeueAngular",
+    fontSize: 20
+  },
+  sounds: {
+    justifyContent: "space-around"
   }
 });
