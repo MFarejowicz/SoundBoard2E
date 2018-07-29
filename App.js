@@ -46,19 +46,19 @@ export default class App extends Component {
           {flex: soundFlex, paddingHorizontal: horzPad, paddingBottom: vertPad}]}>
           <SoundButtonRow
             names={["2 East strikes again!","2 East before blood!","Nani?!"]}
-            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            soundNames={["2ESA.mp3", "2EBB.mp3", "Nani.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
             names={["____ me, Max","Yeahhhh","Boiiii"]}
-            soundNames={["a.mp3", "Yeah.m4a", "Boi.m4a"]}
+            soundNames={["Max.mp3", "Yeah.m4a", "Boi.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["Yikes","Yike","Yeek"]}
-            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            names={["Yikes","Yike","Let's Goooo"]}
+            soundNames={["Yikes.mp3", "Yike.mp3", "LG.mp3"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
             names={["It's fiiiine","West side\n...","...\nPo-Po"]}
-            soundNames={["a.mp3", "b.mp3", "c.mp3"]}
+            soundNames={["IF.mp3", "WS.m4a", "PP.m4a"]}
             dimensions={this.state.dimensions}/>
         </View>
       </View>

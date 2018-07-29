@@ -53,9 +53,9 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Comic Neue Angular BoldOblique.ttf</string>
-		<string>Comic Neue Angular Light.ttf</string>
-		<string>Comic Neue Angular Normal.ttf</string>
+		<string>ComicNeueAngular-BoldOblique.ttf</string>
+		<string>ComicNeueAngular-Light.ttf</string>
+		<string>ComicNeueAngular.ttf</string>
 	</array>
 </dict>
 </plist>
