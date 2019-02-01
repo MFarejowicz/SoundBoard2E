@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import SoundButtonRow from "./components/SoundButtonRow.js"
 
@@ -9,7 +9,7 @@ export default class App extends Component {
     this.state = {
       dimensions: Dimensions.get("window")
     };
-    Dimensions.addEventListener("change", this.updateDimensions.bind(this))
+    Dimensions.addEventListener("change", this.updateDimensions.bind(this));
   }
 
   updateDimensions() {
@@ -19,17 +19,17 @@ export default class App extends Component {
   }
 
   render() {
-    let titleSize, soundFlex, horzPad, vertPad
+    let titleSize, soundFlex, horzPad, vertPad;
     if (this.state.dimensions.width > this.state.dimensions.height) {
-      titleSize = 60
-      soundFlex = 3
-      horzPad = 135
-      vertPad = 0
+      titleSize = 60;
+      soundFlex = 3;
+      horzPad = 135;
+      vertPad = 0;
     } else {
-      titleSize = 80
-      soundFlex = 2
-      horzPad = 40
-      vertPad = 40
+      titleSize = 80;
+      soundFlex = 2;
+      horzPad = 40;
+      vertPad = 40;
     }
 
     return (
@@ -45,20 +45,20 @@ export default class App extends Component {
         <View style={[styles.sounds,
           {flex: soundFlex, paddingHorizontal: horzPad, paddingBottom: vertPad}]}>
           <SoundButtonRow
-            names={["2 East strikes again!","2 East before blood!","Nani?!"]}
-            soundNames={["2ESA.mp3", "2EBB.mp3", "Nani.m4a"]}
+            names={["West side\n...", "...\nPo-Po", "Nani?!"]}
+            soundNames={["WS.m4a", "PP.m4a", "Nani.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["____ me, Max","Yeahhhh","Boiiii"]}
-            soundNames={["Max.mp3", "Yeah.m4a", "Boi.m4a"]}
+            names={["FORWARD Aerial", "Yeahhhh","Boiiii"]}
+            soundNames={["FA.mp3", "Yeah.m4a", "Boi.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["Yikes","Yike","Let's Goooo"]}
-            soundNames={["Yikes.mp3", "Yike.mp3", "LG.mp3"]}
+            names={["STERN JUSTICE!", "Soudesuka", "Wewwww"]}
+            soundNames={["SJ.mp3", "Sou.m4a", "Wew.mp3"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["It's fiiiine","West side\n...","...\nPo-Po"]}
-            soundNames={["IF.mp3", "WS.m4a", "PP.m4a"]}
+            names={["Let's Goooo", "REEE!", "Kubernetes"]}
+            soundNames={["LG.mp3", "Ree.mp3", "Kub.mp3"]}
             dimensions={this.state.dimensions}/>
         </View>
       </View>

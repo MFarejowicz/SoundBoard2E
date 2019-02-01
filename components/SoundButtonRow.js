@@ -23,7 +23,7 @@ export default class SoundButtonRow extends React.Component {
           dimensions={this.props.dimensions}
         />
       </View>
-    )
+    );
   }
 }
 

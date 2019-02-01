@@ -6,7 +6,7 @@ Sound.setCategory('Playback');
 export default class SoundButton extends React.Component {
 
   constructor(props){
-    super(props)
+    super(props);
     this.sound = this.createSound();
   }
 
@@ -23,18 +23,18 @@ export default class SoundButton extends React.Component {
 
   handlePress = () => {
     this.sound.stop(() => {
-      this.sound.play()
-    })
+      this.sound.play();
+    });
   }
 
   render() {
-    let width, height
+    let width, height;
     if (this.props.dimensions.width > this.props.dimensions.height) {
-      height = this.props.dimensions.height / 7
-      width = height * 2
+      height = this.props.dimensions.height / 7;
+      width = height * 2;
     } else {
-      height = this.props.dimensions.width / 4.6
-      width = height
+      height = this.props.dimensions.width / 4.6;
+      width = height;
     }
 
     return (
