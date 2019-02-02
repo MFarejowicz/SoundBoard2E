@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-var Sound = require('react-native-sound');
+const Sound = require('react-native-sound');
 Sound.setCategory('Playback');
 
 export default class SoundButton extends React.Component {

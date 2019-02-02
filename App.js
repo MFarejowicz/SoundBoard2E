@@ -46,19 +46,19 @@ export default class App extends Component {
           {flex: soundFlex, paddingHorizontal: horzPad, paddingBottom: vertPad}]}>
           <SoundButtonRow
             names={["West side\n...", "...\nPo-Po", "Nani?!"]}
-            soundNames={["WS.m4a", "PP.m4a", "Nani.m4a"]}
+            soundNames={["ws.m4a", "pp.m4a", "nani.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
             names={["FORWARD Aerial", "Yeahhhh","Boiiii"]}
-            soundNames={["FA.mp3", "Yeah.m4a", "Boi.m4a"]}
+            soundNames={["fa.mp3", "yeah.m4a", "boi.m4a"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["STERN JUSTICE!", "Soudesuka", "Wewwww"]}
-            soundNames={["SJ.mp3", "Sou.m4a", "Wew.mp3"]}
+            names={["STERN JUSTICE!", "Sou Desuka", "Wewwww"]}
+            soundNames={["sj.mp3", "sou.m4a", "wew.mp3"]}
             dimensions={this.state.dimensions}/>
           <SoundButtonRow
-            names={["Let's Goooo", "REEE!", "Kubernetes"]}
-            soundNames={["LG.mp3", "Ree.mp3", "Kub.mp3"]}
+            names={["Let's Goooo", "REEE!", "Kuber-netes"]}
+            soundNames={["lg.mp3", "ree.mp3", "kub.mp3"]}
             dimensions={this.state.dimensions}/>
         </View>
       </View>
@@ -69,7 +69,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fa7819"
+    backgroundColor: "#fa7819",
+    color: 'black'
   },
   title: {
     flex: 1,
