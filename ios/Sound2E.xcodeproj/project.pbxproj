@@ -37,9 +37,9 @@
 		2DCD954D1E0B4F2C00145EB5 /* Sound2ETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Sound2ETests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		99F01A01220501F60067CDCE /* ComicNeueAngular-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99F019FE220501F60067CDCE /* ComicNeueAngular-Light.ttf */; };
-		99F01A02220501F60067CDCE /* ComicNeueAngular-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99F019FF220501F60067CDCE /* ComicNeueAngular-BoldOblique.ttf */; };
-		99F01A03220501F60067CDCE /* ComicNeueAngular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99F01A00220501F60067CDCE /* ComicNeueAngular.ttf */; };
+		990FEE8F2205323C002F1A36 /* ComicNeueAngular-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 990FEE8C2205323B002F1A36 /* ComicNeueAngular-Light.ttf */; };
+		990FEE902205323C002F1A36 /* ComicNeueAngular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 990FEE8D2205323B002F1A36 /* ComicNeueAngular.ttf */; };
+		990FEE912205323C002F1A36 /* ComicNeueAngular-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 990FEE8E2205323B002F1A36 /* ComicNeueAngular-BoldOblique.ttf */; };
 		99F01A6C220523A90067CDCE /* yeah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 99F01A60220523A80067CDCE /* yeah.m4a */; };
 		99F01A6D220523A90067CDCE /* fa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99F01A61220523A80067CDCE /* fa.mp3 */; };
 		99F01A6E220523A90067CDCE /* wew.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99F01A62220523A80067CDCE /* wew.mp3 */; };
@@ -368,10 +368,10 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8A8D434E0E234D89BA2C6F47 /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
+		990FEE8C2205323B002F1A36 /* ComicNeueAngular-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ComicNeueAngular-Light.ttf"; path = "../assets/fonts/ComicNeueAngular-Light.ttf"; sourceTree = "<group>"; };
+		990FEE8D2205323B002F1A36 /* ComicNeueAngular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ComicNeueAngular.ttf; path = ../assets/fonts/ComicNeueAngular.ttf; sourceTree = "<group>"; };
+		990FEE8E2205323B002F1A36 /* ComicNeueAngular-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ComicNeueAngular-BoldOblique.ttf"; path = "../assets/fonts/ComicNeueAngular-BoldOblique.ttf"; sourceTree = "<group>"; };
 		99B2B533FD194937BA70CB62 /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
-		99F019FE220501F60067CDCE /* ComicNeueAngular-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeueAngular-Light.ttf"; sourceTree = "<group>"; };
-		99F019FF220501F60067CDCE /* ComicNeueAngular-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeueAngular-BoldOblique.ttf"; sourceTree = "<group>"; };
-		99F01A00220501F60067CDCE /* ComicNeueAngular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicNeueAngular.ttf; sourceTree = "<group>"; };
 		99F01A60220523A80067CDCE /* yeah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = yeah.m4a; path = ../assets/sound/yeah.m4a; sourceTree = "<group>"; };
 		99F01A61220523A80067CDCE /* fa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fa.mp3; path = ../assets/sound/fa.mp3; sourceTree = "<group>"; };
 		99F01A62220523A80067CDCE /* wew.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wew.mp3; path = ../assets/sound/wew.mp3; sourceTree = "<group>"; };
@@ -622,6 +622,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				990FEE8E2205323B002F1A36 /* ComicNeueAngular-BoldOblique.ttf */,
+				990FEE8C2205323B002F1A36 /* ComicNeueAngular-Light.ttf */,
+				990FEE8D2205323B002F1A36 /* ComicNeueAngular.ttf */,
 				99F01A68220523A80067CDCE /* boi.m4a */,
 				99F01A61220523A80067CDCE /* fa.mp3 */,
 				99F01A6B220523A90067CDCE /* kub.mp3 */,
@@ -634,9 +637,6 @@
 				99F01A62220523A80067CDCE /* wew.mp3 */,
 				99F01A6A220523A90067CDCE /* ws.m4a */,
 				99F01A60220523A80067CDCE /* yeah.m4a */,
-				99F019FF220501F60067CDCE /* ComicNeueAngular-BoldOblique.ttf */,
-				99F019FE220501F60067CDCE /* ComicNeueAngular-Light.ttf */,
-				99F01A00220501F60067CDCE /* ComicNeueAngular.ttf */,
 				13B07FAE1A68108700A75B9A /* Sound2E */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* Sound2ETests */,
@@ -1142,20 +1142,20 @@
 			files = (
 				99F01A76220523A90067CDCE /* ws.m4a in Resources */,
 				99F01A73220523A90067CDCE /* lg.mp3 in Resources */,
+				990FEE912205323C002F1A36 /* ComicNeueAngular-BoldOblique.ttf in Resources */,
+				990FEE902205323C002F1A36 /* ComicNeueAngular.ttf in Resources */,
 				99F01A71220523A90067CDCE /* ree.mp3 in Resources */,
 				99F01A6F220523A90067CDCE /* pp.m4a in Resources */,
+				990FEE8F2205323C002F1A36 /* ComicNeueAngular-Light.ttf in Resources */,
 				99F01A6E220523A90067CDCE /* wew.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				99F01A6D220523A90067CDCE /* fa.mp3 in Resources */,
 				99F01A6C220523A90067CDCE /* yeah.m4a in Resources */,
-				99F01A01220501F60067CDCE /* ComicNeueAngular-Light.ttf in Resources */,
 				99F01A70220523A90067CDCE /* sou.m4a in Resources */,
-				99F01A02220501F60067CDCE /* ComicNeueAngular-BoldOblique.ttf in Resources */,
 				99F01A75220523A90067CDCE /* sj.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				99F01A77220523A90067CDCE /* kub.mp3 in Resources */,
 				99F01A72220523A90067CDCE /* nani.m4a in Resources */,
-				99F01A03220501F60067CDCE /* ComicNeueAngular.ttf in Resources */,
 				99F01A74220523A90067CDCE /* boi.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
